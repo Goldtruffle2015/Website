@@ -4,5 +4,6 @@ body {
 
 h1 {
     border: 2px solid;
-    color: white
+    color: white;
+    text-align: center
 }
