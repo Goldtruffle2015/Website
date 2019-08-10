@@ -1,9 +1,17 @@
-body {
-    background-color: black
+/*---Default---*/
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
+/*---Tags---*/
+body {
+    background-color: goldenrod}
+
 h1 {
-    border: 2px solid;
+    border-width: 0px;
+    background-color: aqua;
     color: white;
-    text-align: center
+    margin: 0px;
+    text-align: center;
 }
