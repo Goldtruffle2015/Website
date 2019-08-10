@@ -1,9 +1,28 @@
 /*---Default---*/
 * {
+    font-family: 'Times New Roman', Times, serif;
     margin: 0px;
     padding: 0px;
 }
 /*ID*/
+#head {
+    background-color: dimgray;
+    border-width: 0px;
+    text-align: center;
+}
+
+#name {
+    color: white;
+    font-size: 45pt;
+    padding: 20px 20px 0px 20px;
+}
+
+#occupation {
+    color: goldenrod;
+    font-size: 20pt;
+    padding: 10px 20px 20px 20px;
+}
+
 /*Classes*/
 .hyperlink {
     background-color: lightgray;
@@ -16,15 +35,7 @@
 
 /*---Elements---*/
 body {
-    background-color: goldenrod}
-
-h1 {
-    background-color: dimgray;
-    border-width: 0px;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    font-size: 45pt;
+    background-color: lightgray
 }
 
 nav {
