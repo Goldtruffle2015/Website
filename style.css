@@ -23,6 +23,10 @@
     padding: 10px 20px 20px 20px;
 }
 
+#message-box {
+    height: 200px;
+}
+
 /*Classes*/
 .hyperlink {
     background-color: lightgray;
@@ -31,6 +35,12 @@
     margin: 0px 9%;
     padding: 10px 20px;
     text-decoration: none;
+}
+
+.submission-form {
+    width: 50%;
+    clear: both;
+    margin: auto;
 }
 
 /*---Elements---*/
@@ -44,4 +54,14 @@ nav {
     padding: 20px;
     position: sticky;
     text-align: center;
+}
+
+input {
+    height: 30px;
+}
+
+input, #message-box {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
 }
