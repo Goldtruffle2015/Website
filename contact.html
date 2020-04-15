@@ -9,6 +9,9 @@
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
         <title>Contact - John Yu</title>
+        <meta name="description" content="contact information">
+        <meta name="keywords" content="personal website, John Yu">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <!-- Body -->
     <body>
@@ -23,16 +26,32 @@
         </nav>
         <div class=submission-form>
             <form>
-                <label>First Name</label>
-                <input type="text" placeholder="First Name" class=inline-block>
-                <label>Last Name</label>
-                <input type="text" placeholder="Last Name" class=inline-block>
+                <!-- Name Field -->
+                <div id="nameField">
+                    <div id="firstName">
+                        <label>First Name</label>
+                        <input type="text" name="" placeholder="First Name" class=inline-block>
+                    </div>
+                    <div id="lastName">
+                        <label>Last Name</label>
+                        <input type="text" name="" placeholder="Last Name" class=inline-block>        
+                    </div>
+                </div>
+                
+                <!-- Email Field -->
                 <label>Email</label>
-                <input type="text" placeholder="Email" class=block>
+                <input type="email" name="" placeholder="Email" class=block>
+
+                <!-- Subject Field-->
                 <label>Subject</label>
-                <input type="text" placeholder="Subject" class=block>
+                <input type="text" name="" placeholder="Subject" class=block>
+
+                <!-- Message Field -->
                 <label>Message</label>
-                <textarea type="text" placeholder="Message" class=block id=message-box></textarea>
+                <textarea type="text" name="" placeholder="Message" class=block id=message-box></textarea>
+
+                <!-- Submit Button -->
+                <input type="submit" name="submitButton" value="SUBMIT" class=block>
             </form>    
         </div>
     </body>
