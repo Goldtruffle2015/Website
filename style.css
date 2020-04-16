@@ -8,20 +8,20 @@
 /*ID*/
 #head {
     background-color: dimgray;
-    border-width: 0px;
+    border-width: 0;
     text-align: center;
 }
 
 #name {
     color: white;
-    font-size: 45pt;
-    padding: 20px 20px 0px 20px;
+    font-size: 6rem;
+    padding: 1rem 1rem 0rem 1rem;
 }
 
 #occupation {
     color: #7DF9FF;
-    font-size: 20pt;
-    padding: 10px 20px 20px 20px;
+    font-size: 1.5rem;
+    padding: 0rem 1rem 1rem 1rem;
 }
 
 #message-box {
@@ -29,6 +29,7 @@
 }
 
 #nameField {
+    width: 100%;
     display: flex;
 }
 
@@ -42,36 +43,64 @@
     order: 2;
 }
 
+#nameField input {
+    width: 90%;
+}
+
+#nameField label {
+    margin-left: 5%;
+}
+
 /*Classes*/
 .hyperlink {
     background-color: transparent;
     color: black;
-    font-size: 20px;
-    margin: 0px 9%;
-    padding: 10px 20px;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
     text-decoration: none;
     border: 2px black solid;
     border-radius: 15px;
+}
+
+.navSec {
+    flex: 1;
+}
+
+.body1 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
 }
 
 .submission-form {
     width: 50%;
     clear: both;
     margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border:1px black solid;
     border-radius: 15px;
-    padding: 10px 10px 10px 10px;
+    padding: 0.5em;
     background-color: white;
+    max-width: 400px;
 }
 
 .submission-form input[type="submit"] {
+    box-sizing: border-box;
     background-color: black;
     color: white;
-    padding: 1px 2px;
+    margin-top: 0.5rem;
+    padding: 0.1rem 0.2rem;
     border: none;
     width: 100px;
     height: 40px;
     text-align: center;
+}
+
+.submission-form label {
+    box-sizing: border-box;
+    margin: 0.5rem;
+    margin-left: 2.5%;
 }
 
 /*---Elements---*/
@@ -80,6 +109,7 @@ body {
 }
 
 nav {
+    display: flex;
     background-color: white;
     border-width: 0px;
     padding: 1.2em;
@@ -94,10 +124,13 @@ input {
 input, #message-box {
     display: block;
     box-sizing: border-box;
-    width: 100%;
     outline: none;
     border-width: 1px;
-    margin: 2px 2px 2px 2px;
+    margin: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.1rem 0.2rem;
+    width: 95%
 }
 
 a:hover {
