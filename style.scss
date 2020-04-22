@@ -80,24 +80,24 @@
     padding: 0.5em;
     background-color: white;
     max-width: 400px;
-}
 
-.submission-form input[type="submit"] {
-    box-sizing: border-box;
-    background-color: black;
-    color: white;
-    margin-top: 0.5rem;
-    padding: 0.1rem 0.2rem;
-    border: none;
-    width: 100px;
-    height: 40px;
-    text-align: center;
-}
+    input[type="submit"] {
+        box-sizing: border-box;
+        background-color: black;
+        color: white;
+        margin-top: 0.5rem;
+        padding: 0.1rem 0.2rem;
+        border: none;
+        width: 100px;
+        height: 40px;
+        text-align: center;
+    }
 
-.submission-form label {
-    box-sizing: border-box;
-    margin: 0.5rem;
-    margin-left: 2.5%;
+    label {
+        box-sizing: border-box;
+        margin: 0.5rem;
+        margin-left: 2.5%;
+    }
 }
 
 /*---Elements---*/
