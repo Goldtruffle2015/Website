@@ -6,62 +6,8 @@
 }
 
 /*ID*/
-#head {
-    background-color: dimgray;
-    border-width: 0;
-    text-align: center;
-}
-
-#name {
-    color: white;
-    font-size: 6rem;
-    padding: 1rem 1rem 0rem 1rem;
-}
-
-#occupation {
-    color: #7DF9FF;
-    font-size: 1.5rem;
-    padding: 0rem 1rem 1rem 1rem;
-}
-
-#message-box {
-    height: 200px;
-}
-
-#nameField {
-    width: 100%;
-    display: flex;
-}
-
-#firstName {
-    flex: 1;
-    order: 1;
-}
-
-#lastName {
-    flex: 1;
-    order: 2;
-}
-
-#nameField input {
-    width: 90%;
-}
-
-#nameField label {
-    margin-left: 5%;
-}
 
 /*Classes*/
-.hyperlink {
-    background-color: transparent;
-    color: black;
-    font-size: 1rem;
-    text-align: center;
-    padding: 1rem 2rem;
-    text-decoration: none;
-    border: 2px black solid;
-    border-radius: 15px;
-}
 
 .body1 {
     font-size: 2rem;
@@ -69,68 +15,9 @@
     padding: 1rem;
 }
 
-.submission-form {
-    width: 50%;
-    clear: both;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border:1px black solid;
-    border-radius: 15px;
-    padding: 0.5em;
-    background-color: white;
-    max-width: 400px;
-
-    input[type="submit"] {
-        box-sizing: border-box;
-        background-color: black;
-        color: white;
-        margin-top: 0.5rem;
-        padding: 0.1rem 0.2rem;
-        border: none;
-        width: 100px;
-        height: 40px;
-        text-align: center;
-    }
-
-    label {
-        box-sizing: border-box;
-        margin: 0.5rem;
-        margin-left: 2.5%;
-    }
-}
-
 /*---Elements---*/
 body {
     background-color: lightgray
-}
-
-nav {
-    background-color:transparent;
-    border-width: 0px;
-    padding: 1.2em;
-    position: sticky;
-    text-align: right;
-}
-
-input {
-    height: 2em;
-}
-
-input, #message-box {
-    display: block;
-    box-sizing: border-box;
-    outline: none;
-    border-width: 1px;
-    margin: auto;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    padding: 0.1rem 0.2rem;
-    width: 95%
-}
-
-a:hover {
-    background-color:gray;
 }
 
 /*---Media Queries---*/
