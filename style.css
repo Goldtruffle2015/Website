@@ -5,6 +5,9 @@
 }
 
 /* -- ID -- */
+#body-paragraph {
+    display: block;
+}
 
 /* -- Classes -- */
 .logo {
@@ -30,6 +33,23 @@
     padding: 15px;
     border-radius: 10px;
     background-color: hotpink;
+}
+
+.home-body {
+    display: flex;
+    align-items: stretch;
+}
+
+.self-portrait {
+    width: 372;
+}
+
+.body-paragraph {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 /* -- Elements -- */
