@@ -25,7 +25,6 @@
 .nav-links {
     display: flex;
     justify-content: space-around;
-    width: 30%;
 }
 
 .nav-links li {
@@ -37,8 +36,9 @@
     font-family: 'Times New Roman', Times, serif;
     color: rgb(226, 226, 226);
     padding: 15px;
+    margin: 15px;
     border-radius: 10px;
-    background-color: hotpink;
+    background-color: #b08f26;
 }
 
 .home-body {
@@ -60,21 +60,59 @@
     line-height: 300%;
 }
 
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
 /* -- Elements -- */
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
+    max-height: 8vh;
     background-color: #d4af37;
 }
 
- /*Small (-sm-) devices (landscape phones, 576px and down)*/
+ /*Small (-sm-) devices (landscape phones, 576px and lower)*/
 @media (max-width: 576px) {
+    .nav-links {
+        background-color: #d4af37;
+        position: absolute;
+        height: 92vh;
+        max-width: 30%;
+        top: 8vh;
+        right: 0;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .burger {
+        display: block;
+    }
 }
 
-/*Medium (-md-) devices (tablets, 768px and down)*/
+/*Medium (-md-) devices (tablets, 768px and lower)*/
 @media (max-width: 768px) {
+    .nav-links {
+        margin: 0;
+        width: 60%;
+    }
+}
 
+/*Large (-lg-) devices (desktops, 992px and lower)*/
+@media (max-width: 992px) {
+    .nav-links {
+        margin: 0;
+        width: 60%;
+    }
 }
