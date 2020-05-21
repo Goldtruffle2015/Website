@@ -8,4 +8,5 @@ const nav_li = document.querySelectorAll(".nav-links li")
 // -- Code Starts Here -- //
 burger.addEventListener("click", () => {
     nav.classList.toggle("nav-active");
+    burger.classList.toggle("toggle");
 })
