@@ -5,15 +5,21 @@
 }
 
 /* -- ID -- */
-#body-paragraph {
-    display: block;
-}
 
 /* -- Classes -- */
 .logo {
+    display: flex;
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(226, 226, 226);
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo img {
+    margin: 10px;
+    max-width: 7vh;
+    max-height: 7vh;
 }
 
 .nav-links {
@@ -40,16 +46,18 @@
     align-items: stretch;
 }
 
-.self-portrait {
-    width: 372;
-}
-
 .body-paragraph {
     display: flex;
     overflow: hidden;
     width: 100%;
     justify-content: center;
     align-items: center;
+}
+
+.body-paragraph p {
+    font-size: 25pt;
+    color: #505050;
+    line-height: 300%;
 }
 
 /* -- Elements -- */
@@ -61,5 +69,12 @@ nav {
     background-color: #d4af37;
 }
 
- 
+ /*Small (-sm-) devices (landscape phones, 576px and down)*/
+@media (max-width: 576px) {
 
+}
+
+/*Medium (-md-) devices (tablets, 768px and down)*/
+@media (max-width: 768px) {
+
+}
