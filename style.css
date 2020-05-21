@@ -83,6 +83,10 @@ nav {
     background-color: #d4af37;
 }
 
+body {
+    overflow-x: hidden;
+}
+
  /*Small (-sm-) devices (landscape phones, 576px and lower)*/
 @media (max-width: 576px) {
     .nav-links {
@@ -94,10 +98,16 @@ nav {
         right: 0;
         flex-direction: column;
         align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
     }
 
     .burger {
         display: block;
+    }
+
+    .body-paragraph p {
+        font-size: 16pt;
     }
 }
 
@@ -115,4 +125,9 @@ nav {
         margin: 0;
         width: 60%;
     }
+}
+
+/* -- Toggle Classes*/
+.nav-active {
+    transform: translateX(0%);
 }
