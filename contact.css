@@ -1,0 +1,62 @@
+.box {
+    display: flex;
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    background: none;
+    width: 35%;
+}
+
+.name-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+input, textarea {
+    background: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: black;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #3498db;
+}
+
+input[name="first-name"], input[name="last-name"] {
+    width: 250px;
+}
+
+input[type = "text"] {
+    margin: 10px 14px;
+    padding: 14px 10px;
+}
+
+textarea[name="message"] {
+    margin: 10px 14px;
+    padding: 10px 10px;
+    height: 150px;
+}
+
+input[type = "submit"] {
+    margin: 10px auto;
+    border: 2px solid #2ecc71;
+    border-radius: 20px;
+    padding: 14px 10px;
+    width: 110px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+input[type = "submit"]:hover {
+    background-color: #2ecc71;
+}
+
+body {
+    overflow: hidden;
+}
