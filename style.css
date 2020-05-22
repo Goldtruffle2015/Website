@@ -53,17 +53,22 @@
 }
 
 .body-paragraph {
-    display: flex;
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 10px 10px;
+    padding: 10px 10px;
     overflow: hidden;
-    width: 100%;
+    width: 50%;
     justify-content: center;
     align-items: center;
 }
 
 .body-paragraph p {
-    font-size: 23pt;
+    font-size: 22pt;
     color: #505050;
-    line-height: 300%;
 }
 
 .burger {
@@ -84,8 +89,8 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
-    max-height: 8vh;
+    min-height: 12vh;
+    max-height: 12vh;
     background-color: #d4af37;
 }
 
@@ -108,19 +113,7 @@ body {
 /*Medium (-md-) devices (tablets, 768px and lower)*/
 @media (max-width: 768px) {
     .nav-links {
-        margin: 0;
-        width: 60%;
         z-index: 99;    /*Nav bar is stacked on top of form*/
-    }
-
-    .body-paragraph p {
-        font-size: 17pt;
-    }
-}
-
- /*Small (-sm-) devices (landscape phones, 576px and lower)*/
-@media (max-width: 576px) {
-    .nav-links {
         background-color: #d4af37;
         position: absolute;
         height: 92vh;
@@ -137,6 +130,13 @@ body {
         display: block;
     }
 
+    .body-paragraph p {
+        font-size: 17pt;
+    }
+}
+
+ /*Small (-sm-) devices (landscape phones, 576px and lower)*/
+@media (max-width: 576px) {
     .body-paragraph p {
         font-size: 15pt;
     }
