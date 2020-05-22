@@ -93,13 +93,38 @@ body {
     overflow-x: hidden;
 }
 
+/*Large (-lg-) devices (desktops, 992px and lower)*/
+@media (max-width: 992px) {
+    .nav-links {
+        margin: 0;
+        width: 60%;
+    }
+
+    .body-paragraph p {
+        font-size: 18pt;
+    }
+}
+
+/*Medium (-md-) devices (tablets, 768px and lower)*/
+@media (max-width: 768px) {
+    .nav-links {
+        margin: 0;
+        width: 60%;
+        z-index: 99;    /*Nav bar is stacked on top of form*/
+    }
+
+    .body-paragraph p {
+        font-size: 17pt;
+    }
+}
+
  /*Small (-sm-) devices (landscape phones, 576px and lower)*/
 @media (max-width: 576px) {
     .nav-links {
         background-color: #d4af37;
         position: absolute;
         height: 92vh;
-        max-width: 30%;
+        max-width: 35%;
         top: 8vh;
         right: 0;
         flex-direction: column;
@@ -114,30 +139,6 @@ body {
 
     .body-paragraph p {
         font-size: 15pt;
-    }
-}
-
-/*Medium (-md-) devices (tablets, 768px and lower)*/
-@media (max-width: 768px) {
-    .nav-links {
-        margin: 0;
-        width: 60%;
-    }
-
-    .body-paragraph p {
-        font-size: 17pt;
-    }
-}
-
-/*Large (-lg-) devices (desktops, 992px and lower)*/
-@media (max-width: 992px) {
-    .nav-links {
-        margin: 0;
-        width: 60%;
-    }
-
-    .body-paragraph p {
-        font-size: 18pt;
     }
 }
 
